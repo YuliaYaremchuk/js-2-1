@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+/* Object car has no property ["colour"]*/
 
 // Example 2
 function sayHelloToUser(user) {
@@ -26,6 +27,7 @@ let user = {
 };
 
 sayHelloToUser(user);
+/* object user has no property firstName*/
 
 // Example 3
 let myPet = {

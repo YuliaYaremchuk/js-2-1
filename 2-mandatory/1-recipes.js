@@ -23,3 +23,38 @@
 */
 
 // write code here
+
+let recipe1 = {
+ napoleon: "napoleon",
+ serves: 6,
+ingredients: ["egs", "sugar", "vanil"]
+}
+console.log(recipe1);
+
+let recipe2 = {
+ "milky Way" : "miLky Way",
+ serves: 4,
+ingredients: ["egs", "sugar", "vanil", "milk"]
+}
+console.log(recipe2);
+
+let recipe3 = {
+ chiken: "chiken",
+ serves: 2,
+ingredients: ["chiken", "sult", "peper"]
+}
+console.log(recipe3);
+
+let recipe4 = {
+ "grill potatos": "potatos",
+ serves: 6,
+ingredients: ["potatos", "sult"]
+}
+console.log(recipe4);
+
+let recipe5 = {
+ name: "eggs",
+ serves: 6,
+ingredients: ["egs", "sult"]
+}
+console.log(recipe5);

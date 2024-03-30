@@ -18,7 +18,17 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
-function createShoppingList(recipe) {
+  function createShoppingList(recipe) {
+  let pantryContents = [...pantry.fridgeContents, ...pantry.cupboardContents];
+  let missingIngredients = recipe.ingredients.filter(ingredient => !pantryContents.includes(ingredient));
+  
+  return {
+    name: recipe.name,
+    items: missingIngredients
+  };
+
+
+
   // write code here
 }
 

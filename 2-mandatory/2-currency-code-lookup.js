@@ -18,6 +18,9 @@ const COUNTRY_CURRENCY_CODES = [
 ];
 
 function createLookup(countryCurrencyCodes) {
+  let result = {};
+  result = countryCurrencyCodes.reduce((acc, [key, value])=>({...acc, [key]:value}), {});
+  return(result);
   // write code here
 }
 

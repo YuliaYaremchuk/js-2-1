@@ -23,8 +23,16 @@ let capitalCities = {
 */
 
 // write code here
+capitalCities.UnitedKingdom.population = 8980000;
+capitalCities.China.population = 21500000;
+const p = {"Peru" : {
+  name: "Lima",
+  population: 9750000}
+}
+const result = Object.assign({}, capitalCities, p);
 
-console.log(capitalCities);
+
+console.log(result);
 
 /* EXPECTED RESULT
 

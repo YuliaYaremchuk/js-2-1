@@ -20,8 +20,25 @@ const MENU = {
 };
 
 let cashRegister = {
+  
+};
+ cashRegister.orderBurger = function(balance) {
+    if(balance >= MENU.burger) {
+      balance -= MENU.burger;
+    } else {
+      console.log("Insufficient balance to order a burger.");
+    }
+    return balance;
   // write code here
-}
+};
+cashRegister.orderFalafel = function(balance) {
+  if (balance >= MENU.falafel) {
+    balance -= MENU.falafel;
+  } else {
+    console.log("Insufficient balance to order a falafel.");
+  }
+  return balance;
+};
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
